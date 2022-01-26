@@ -1,0 +1,79 @@
+.work-background-container {
+  
+    .work-container {
+        display: grid;
+        height: 100vh;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+
+        .left, .right {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            transition: .5s;
+            box-shadow: -2px 2px 0 rgba(5, 5, 5, 0.8);
+            float: left
+        }
+
+        .left {
+            transform: rotate(45deg);
+            position: absolute;
+            left: 10%;
+            top: 45%
+
+        }
+
+        .center {
+            text-align: center;
+            justify-content: center;
+            align-items: end;
+            padding-top: 100px;
+
+            h1 {
+                padding: 5px 0;
+            }
+           
+            h1, p {
+                color: #3f3f3f;
+                font-size: 18px;
+                padding-left: 10px;
+                padding-right: 10px;
+                margin: 0;
+            }
+
+            p {
+                padding-top: 5px;
+                padding-bottom: 20px;
+            }
+
+         
+
+
+            .button {
+                padding: 10px 20px;
+                color:rgba(5, 5, 5, 0.8);
+                background:rgba(255, 255, 255, 0.4);
+                border-radius: 30px;
+                color: #646464;
+                font-size: 15px;
+            }
+            
+        }
+
+
+        .right {
+            transform: rotate(225deg);
+            position: absolute;
+            right: 10%;
+            top: 45%;
+        }
+        
+    }
+}
+
+
+@media screen and (min-width: 450px) {
+
+}

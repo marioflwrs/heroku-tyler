@@ -1,0 +1,61 @@
+.contact-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  transition: all 2s;
+
+  img {
+    transition: all 0.2s ease-in-out;
+    color: white;
+    width:1.5rem;
+    height:1.5rem;
+  }
+
+}
+
+.fade-in {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  @media screen and (min-width: 720px) {
+    .contact-container {
+      
+      img {
+        transition: all 0.2s ease-in-out;
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 920px) {
+    .contact-container {
+      
+      img {
+        transition: all 0.2s ease-in-out;
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    .contact-container {
+
+      font-size: 10px;
+      transition: all 2s;
+
+      
+    }
+  }

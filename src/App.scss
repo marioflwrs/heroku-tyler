@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+@import "./Assets/Sass/_variables";
+
+body, html {
+  height: 100vh;
+  margin: 0;
+  font-weight: bold;
+  //transition: all 0.2s ease-in-out
+}
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  height: 100vh;
+  padding: 0;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+}
+
+a:visited {
+  color: $text-color;
+}
+

@@ -1,0 +1,89 @@
+@import "../../Assets/Sass/variables";
+  
+
+  .about-container {
+
+    transition: all 0.1s ease-in-out;
+    grid-template-columns: 1fr;
+    display: grid;
+    min-width: 100%;
+    padding-top: 20px;
+    height: 100vh;
+    background-image: url('../../Assets/images/Press/Vogue/IMG3041-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -3in;
+    padding: 0;
+    
+
+   
+
+    .page-title {
+      text-align: center;
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      justify-self: center;
+    }
+
+    a {
+      padding: 0;
+      margin: 0;
+      max-width: 100%;
+    }
+
+  }
+
+  .article-text {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin: 0 30px;
+    border-radius: 10px;
+    text-align: left;
+    transition: all 0.5s;
+    cursor: default;
+    
+    p {
+      margin-bottom: 50px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    h1 {
+      padding-top: 15px;
+    }
+    
+  }
+
+
+  @media screen and (min-width: 1000px) {
+   .about-container {
+
+    background-position-x: 0;
+
+     
+  }
+  
+  .article-container {
+    margin: 0 25%;
+  }
+}
+
+
+  .fade-in {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+
